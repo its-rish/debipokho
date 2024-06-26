@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debi-Pokho</title>
+    <link rel="stylesheet" type="text/css" href="styled.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="headersection">
+        <div class="headerTop">
+            <div class="container">
+                <div class="headerTopWrapper">
+                    <div class="header_topLeft">
+                        <ul class="socil_section">
+                            <li>
+                                <a href="/"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.66671 10.2501H8.75004L9.58337 6.91675H6.66671V5.25008C6.66671 4.39175 6.66671 3.58341 8.33337 3.58341H9.58337V0.783415C9.31171 0.747581 8.28587 0.666748 7.20254 0.666748C4.94004 0.666748 3.33337 2.04758 3.33337 4.58341V6.91675H0.833374V10.2501H3.33337V17.3334H6.66671V10.2501Z"
+                                            fill="white" />
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.53329 17.9501C8.33329 18.1917 9.14162 18.3334 9.99996 18.3334C12.2101 18.3334 14.3297 17.4554 15.8925 15.8926C17.4553 14.3298 18.3333 12.2102 18.3333 10.0001C18.3333 8.90573 18.1177 7.8221 17.699 6.81105C17.2802 5.80001 16.6663 4.88135 15.8925 4.10752C15.1187 3.3337 14.2 2.71987 13.189 2.30109C12.1779 1.8823 11.0943 1.66675 9.99996 1.66675C8.90561 1.66675 7.82198 1.8823 6.81093 2.30109C5.79988 2.71987 4.88122 3.3337 4.1074 4.10752C2.5446 5.67033 1.66663 7.78994 1.66663 10.0001C1.66663 13.5417 3.89163 16.5834 7.03329 17.7834C6.95829 17.1334 6.88329 16.0584 7.03329 15.3167L7.99162 11.2001C7.99162 11.2001 7.74996 10.7167 7.74996 9.95008C7.74996 8.80008 8.46663 7.94175 9.28329 7.94175C9.99996 7.94175 10.3333 8.46675 10.3333 9.14175C10.3333 9.85841 9.85829 10.8834 9.61662 11.8667C9.47496 12.6834 10.05 13.4001 10.8833 13.4001C12.3666 13.4001 13.5166 11.8167 13.5166 9.58341C13.5166 7.58341 12.0833 6.21675 10.025 6.21675C7.67496 6.21675 6.29163 7.96675 6.29163 9.80841C6.29163 10.5251 6.52496 11.2501 6.90829 11.7251C6.98329 11.7751 6.98329 11.8417 6.95829 11.9667L6.71663 12.8751C6.71663 13.0167 6.62496 13.0667 6.48329 12.9667C5.41663 12.5001 4.79996 10.9834 4.79996 9.75841C4.79996 7.12508 6.66662 4.73341 10.2666 4.73341C13.1333 4.73341 15.3666 6.79175 15.3666 9.52508C15.3666 12.3917 13.5916 14.6917 11.05 14.6917C10.2416 14.6917 9.44996 14.2584 9.16662 13.7501L8.60829 15.7251C8.41662 16.4417 7.89162 17.4001 7.53329 17.9751V17.9501Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.49996 0.666748H12.5C15.1666 0.666748 17.3333 2.83341 17.3333 5.50008V12.5001C17.3333 13.782 16.8241 15.0113 15.9176 15.9178C15.0112 16.8242 13.7818 17.3334 12.5 17.3334H5.49996C2.83329 17.3334 0.666626 15.1667 0.666626 12.5001V5.50008C0.666626 4.2182 1.17585 2.98882 2.08228 2.0824C2.9887 1.17597 4.21808 0.666748 5.49996 0.666748ZM5.33329 2.33341C4.53764 2.33341 3.77458 2.64948 3.21197 3.21209C2.64936 3.7747 2.33329 4.53776 2.33329 5.33341V12.6667C2.33329 14.3251 3.67496 15.6667 5.33329 15.6667H12.6666C13.4623 15.6667 14.2253 15.3507 14.7879 14.7881C15.3506 14.2255 15.6666 13.4624 15.6666 12.6667V5.33341C15.6666 3.67508 14.325 2.33341 12.6666 2.33341H5.33329ZM13.375 3.58341C13.6512 3.58341 13.9162 3.69316 14.1115 3.88851C14.3069 4.08386 14.4166 4.34881 14.4166 4.62508C14.4166 4.90135 14.3069 5.1663 14.1115 5.36165C13.9162 5.557 13.6512 5.66675 13.375 5.66675C13.0987 5.66675 12.8337 5.557 12.6384 5.36165C12.443 5.1663 12.3333 4.90135 12.3333 4.62508C12.3333 4.34881 12.443 4.08386 12.6384 3.88851C12.8337 3.69316 13.0987 3.58341 13.375 3.58341ZM8.99996 4.83341C10.105 4.83341 11.1648 5.2724 11.9462 6.0538C12.7276 6.8352 13.1666 7.89501 13.1666 9.00008C13.1666 10.1051 12.7276 11.165 11.9462 11.9464C11.1648 12.7278 10.105 13.1667 8.99996 13.1667C7.89489 13.1667 6.83508 12.7278 6.05368 11.9464C5.27228 11.165 4.83329 10.1051 4.83329 9.00008C4.83329 7.89501 5.27228 6.8352 6.05368 6.0538C6.83508 5.2724 7.89489 4.83341 8.99996 4.83341ZM8.99996 6.50008C8.33692 6.50008 7.70103 6.76347 7.23219 7.23231C6.76335 7.70115 6.49996 8.33704 6.49996 9.00008C6.49996 9.66312 6.76335 10.299 7.23219 10.7678C7.70103 11.2367 8.33692 11.5001 8.99996 11.5001C9.663 11.5001 10.2989 11.2367 10.7677 10.7678C11.2366 10.299 11.5 9.66312 11.5 9.00008C11.5 8.33704 11.2366 7.70115 10.7677 7.23231C10.2989 6.76347 9.663 6.50008 8.99996 6.50008Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7925 0.5H16.3483L10.765 6.85417L17.3333 15.5H12.19L8.16246 10.2558L3.55329 15.5H0.994959L6.96746 8.70417L0.666626 0.5H5.93996L9.58162 5.29333L13.7925 0.5ZM12.8958 13.9767H14.3125L5.16996 1.94333H3.64996L12.8958 13.9767Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.78329 2.16677C3.78306 2.60879 3.60726 3.03263 3.29454 3.34503C2.98182 3.65744 2.55781 3.83282 2.11578 3.8326C1.67376 3.83238 1.24992 3.65657 0.937517 3.34386C0.625113 3.03114 0.44973 2.60713 0.449951 2.1651C0.450172 1.72307 0.625979 1.29924 0.938696 0.986834C1.25141 0.674429 1.67542 0.499047 2.11745 0.499268C2.55948 0.499489 2.98331 0.675295 3.29572 0.988012C3.60812 1.30073 3.78351 1.72474 3.78329 2.16677ZM3.83329 5.06677H0.499951V15.5001H3.83329V5.06677ZM9.09995 5.06677H5.78329V15.5001H9.06662V10.0251C9.06662 6.9751 13.0416 6.69177 13.0416 10.0251V15.5001H16.3333V8.89177C16.3333 3.7501 10.45 3.94177 9.06662 6.46677L9.09995 5.06677Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </li>
+                        </ul>
+                        <ul class="adress_details">
+                            <li>
+                                <a href="tel:+91 000 000 1111">
+                                    <img src="assets/logo/phoneIcon.svg" alt="phone">+91 000 000 1111
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:dumy@yopmail.com">
+                                    <img src="assets/logo/MailIcon.svg" alt="phone">dumy@yopmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="headertopRight">
+                        <ul class="adress_details">
+                            <li>
+                                <a href="tel:+91 000 000 1111">
+                                    <img src="assets/logo/phoneIcon.svg" alt="phone">+91 000 000 1111
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:dumy@yopmail.com">
+                                    <img src="assets/logo/MailIcon.svg" alt="phone">dumy@yopmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="header_wrapper">
+                <a href="/" class="logoWrap">
+                    <img src="assets/images/brandLogo.png" alt="logo" />
+                </a>
+                <div class="navitem">
+                    <ul>
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>Types Of Sarees </a> <button>+</button>
+                        </li>
+                        <li>
+                            <a>Products </a> <button>+</button>
+                        </li>
+                        <li>
+                            <a>Gallery</a>
+                        </li>
+                        <li>
+                            <a>About Us </a><button>+</button>
+                        </li>
+                        <li>
+                            <a>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menuebar">
+                    <div class="serchouterWrap">
+                        <i>
+                            <img src="assets/logo/search.svg" alt="search" />
+                        </i>
+                        <input type="text" value="" class="searchsection" placeholder="Search for sarees">
+                    </div>
+                    <div class="cmn_section">
+                        <button><i>
+                                <img src="assets/logo/heart.svg" alt="hearticon" />
+                            </i></button>
+                        <button><i>
+                                <img src="assets/logo/cartIcon.svg" alt="hearticon" />
+                            </i></button>
+                        <button class="userSection"><i>
+                                <img src="assets/images/userImage.png" alt="hearticon" />
+                            </i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="container">
+                <div class="flex headerTag">
+                    <i><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.47483 12.7502L7.24983 16.5252C8.79983 18.0752 11.3165 18.0752 12.8748 16.5252L16.5332 12.8668C18.0832 11.3168 18.0832 8.80016 16.5332 7.24183L12.7498 3.47516C11.9582 2.6835 10.8665 2.2585 9.74983 2.31683L5.58316 2.51683C3.9165 2.59183 2.5915 3.91683 2.50816 5.57516L2.30816 9.74183C2.25816 10.8668 2.68316 11.9585 3.47483 12.7502Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.91659 10.0002C9.06718 10.0002 9.99992 9.06742 9.99992 7.91683C9.99992 6.76624 9.06718 5.8335 7.91659 5.8335C6.76599 5.8335 5.83325 6.76624 5.83325 7.91683C5.83325 9.06742 6.76599 10.0002 7.91659 10.0002Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </i>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="banner_Wrap">
+                    <figure>
+                        <img src="assets/images/bannerimg.png" alt="bannerimg">
+                    </figure>
+                    <div class="bannerText">
+                        <div class="bannerTitleSecction">
+                            <h1>The Perfect Sarees For Every Occassion</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur. Malesuada tincidunt arcu sit non.</p>
+                        </div>
+                        <div class="full-flex bannerBtn">
+                            <button class="primaryBtn">Shop Our Best Sellers</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bannerBtm">
+        <div class="bannerbtnsection">
+            <div class="bannercardouter">
+                <div class="flex ech_bannerbtncard">
+                    <div class="icon_wrap">
+                        <svg width="28" height="19" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.3906 0C25.6807 0 25.9531 0.0527344 26.208 0.158203C26.4629 0.263672 26.687 0.41748 26.8804 0.619629C27.0737 0.821777 27.2231 1.0459 27.3286 1.29199C27.4341 1.53809 27.4912 1.81055 27.5 2.10938V16.4531C27.5 16.7432 27.4473 17.0156 27.3418 17.2705C27.2363 17.5254 27.0825 17.7495 26.8804 17.9429C26.6782 18.1362 26.4541 18.2856 26.208 18.3911C25.9619 18.4966 25.6895 18.5537 25.3906 18.5625H2.60938C2.31934 18.5625 2.04688 18.5098 1.79199 18.4043C1.53711 18.2988 1.31299 18.145 1.11963 17.9429C0.92627 17.7407 0.776855 17.5166 0.671387 17.2705C0.565918 17.0244 0.508789 16.752 0.5 16.4531V2.10938C0.5 1.81934 0.552734 1.54688 0.658203 1.29199C0.763672 1.03711 0.91748 0.812988 1.11963 0.619629C1.32178 0.42627 1.5459 0.276855 1.79199 0.171387C2.03809 0.065918 2.31055 0.00878906 2.60938 0H25.3906ZM2.60938 1.6875C2.48633 1.6875 2.38525 1.72705 2.30615 1.80615C2.22705 1.88525 2.1875 1.98633 2.1875 2.10938V5.0625H25.8125V2.10938C25.8125 1.98633 25.7729 1.88525 25.6938 1.80615C25.6147 1.72705 25.5137 1.6875 25.3906 1.6875H2.60938ZM25.3906 16.875C25.5137 16.875 25.6147 16.8354 25.6938 16.7563C25.7729 16.6772 25.8125 16.5762 25.8125 16.4531V6.75H2.1875V16.4531C2.1875 16.5762 2.22705 16.6772 2.30615 16.7563C2.38525 16.8354 2.48633 16.875 2.60938 16.875H25.3906ZM19.0625 11.8125H22.4375V13.5H19.0625V11.8125Z"
+                                fill="#1E1E1E" />
+                        </svg>
+                    </div>
+                    <div class="bannerbtncardText">
+                        <p class="bannerTitle">Quick Payment</p>
+                        <p class="bannersubText">100% Secure Payment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bannercardouter">
+                <div class="flex ech_bannerbtncard">
+                    <div class="icon_wrap">
+                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5 11.6367C19.9688 11.957 20.3867 12.3203 20.7539 12.7266C21.1211 13.1328 21.4375 13.5781 21.7031 14.0625C21.9688 14.5469 22.1641 15.0586 22.2891 15.5977C22.4141 16.1367 22.4844 16.6875 22.5 17.25C22.5 18.1797 22.3242 19.0547 21.9727 19.875C21.6211 20.6953 21.1367 21.4102 20.5195 22.0195C19.9023 22.6289 19.1875 23.1094 18.375 23.4609C17.5625 23.8125 16.6875 23.9922 15.75 24C15.0391 24 14.3516 23.8945 13.6875 23.6836C13.0234 23.4727 12.4141 23.168 11.8594 22.7695C11.3047 22.3711 10.8125 21.8945 10.3828 21.3398C9.95312 20.7852 9.62109 20.1719 9.38672 19.5H0V1.5H3V0H4.5V1.5H15V0H16.5V1.5H19.5V11.6367ZM1.5 3V6H18V3H16.5V4.5H15V3H4.5V4.5H3V3H1.5ZM9.03516 18C9.01172 17.7578 9 17.5078 9 17.25C9 16.5781 9.09375 15.9258 9.28125 15.293C9.46875 14.6602 9.75391 14.0625 10.1367 13.5H9V12H10.5V13.0078C10.8203 12.6094 11.1758 12.2578 11.5664 11.9531C11.957 11.6484 12.3789 11.3867 12.832 11.168C13.2852 10.9492 13.7578 10.7852 14.25 10.6758C14.7422 10.5664 15.2422 10.5078 15.75 10.5C16.5312 10.5 17.2812 10.6289 18 10.8867V7.5H1.5V18H9.03516ZM15.75 22.5C16.4766 22.5 17.1562 22.3633 17.7891 22.0898C18.4219 21.8164 18.9766 21.4414 19.4531 20.9648C19.9297 20.4883 20.3047 19.9336 20.5781 19.3008C20.8516 18.668 20.9922 17.9844 21 17.25C21 16.5234 20.8633 15.8438 20.5898 15.2109C20.3164 14.5781 19.9414 14.0234 19.4648 13.5469C18.9883 13.0703 18.4336 12.6953 17.8008 12.4219C17.168 12.1484 16.4844 12.0078 15.75 12C15.0234 12 14.3438 12.1367 13.7109 12.4102C13.0781 12.6836 12.5234 13.0586 12.0469 13.5352C11.5703 14.0117 11.1953 14.5664 10.9219 15.1992C10.6484 15.832 10.5078 16.5156 10.5 17.25C10.5 17.9766 10.6367 18.6562 10.9102 19.2891C11.1836 19.9219 11.5586 20.4766 12.0352 20.9531C12.5117 21.4297 13.0664 21.8047 13.6992 22.0781C14.332 22.3516 15.0156 22.4922 15.75 22.5ZM16.5 16.5H18.75V18H15V13.5H16.5V16.5ZM3 12H4.5V13.5H3V12ZM6 12H7.5V13.5H6V12ZM6 9H7.5V10.5H6V9ZM6 15H7.5V16.5H6V15ZM10.5 10.5H9V9H10.5V10.5ZM13.5 10.5H12V9H13.5V10.5ZM3 9H4.5V10.5H3V9Z"
+                                fill="#1E1E1E" />
+                        </svg>
+
+                    </div>
+                    <div class="bannerbtncardText">
+                        <p class="bannerTitle">24/7 Support</p>
+                        <p class="bannersubText">Ready For You</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bannercardouter">
+                <div class="flex ech_bannerbtncard">
+                    <div class="icon_wrap">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.95005 2.07505C5.95005 2.55565 5.85015 3.01195 5.66925 3.42505H10C10.1791 3.42505 10.3508 3.49616 10.4773 3.62275C10.6039 3.74934 10.675 3.92103 10.675 4.10005V6.80005H10C9.61689 6.79933 9.23799 6.88051 8.88875 7.03813C8.53951 7.19575 8.22799 7.42619 7.97505 7.714C7.5552 8.19055 7.30005 8.8156 7.30005 9.50005V10.175H4.60005C4.42103 10.175 4.24934 10.1039 4.12275 9.97735C3.99616 9.85076 3.92505 9.67907 3.92505 9.50005V5.16925C3.28829 5.44782 2.58088 5.52233 1.90005 5.38255V9.50005C1.90005 10.2161 2.18451 10.9029 2.69086 11.4092C3.19721 11.9156 3.88396 12.2 4.60005 12.2H7.30005V14.9C7.29867 15.4153 7.44525 15.9201 7.72238 16.3544C7.9995 16.7888 8.39552 17.1344 8.86335 17.3503C8.46341 15.7202 8.62612 14.0028 9.32505 12.4768V9.50005C9.32505 9.32103 9.39616 9.14934 9.52275 9.02275C9.64934 8.89616 9.82103 8.82505 10 8.82505H12.9781C14.5041 8.12612 16.2216 7.96341 17.8516 8.36335C17.6338 7.89642 17.2874 7.50132 16.8529 7.22441C16.4184 6.94751 15.9139 6.80029 15.3987 6.80005H12.6987V4.10005C12.6987 3.38396 12.4142 2.69721 11.9079 2.19086C11.4015 1.68451 10.7148 1.40005 9.9987 1.40005H5.88255C5.9271 1.61875 5.95005 1.8442 5.95005 2.07505ZM4.60005 2.07505C4.60005 2.61211 4.3867 3.12718 4.00694 3.50694C3.62718 3.8867 3.11211 4.10005 2.57505 4.10005C2.03799 4.10005 1.52292 3.8867 1.14316 3.50694C0.763397 3.12718 0.550049 2.61211 0.550049 2.07505C0.550049 1.53799 0.763397 1.02292 1.14316 0.643158C1.52292 0.263397 2.03799 0.0500488 2.57505 0.0500488C3.11211 0.0500488 3.62718 0.263397 4.00694 0.643158C4.3867 1.02292 4.60005 1.53799 4.60005 2.07505ZM19.45 2.07505C19.45 2.61211 19.2367 3.12718 18.8569 3.50694C18.4772 3.8867 17.9621 4.10005 17.425 4.10005C16.888 4.10005 16.3729 3.8867 15.9932 3.50694C15.6134 3.12718 15.4 2.61211 15.4 2.07505C15.4 1.53799 15.6134 1.02292 15.9932 0.643158C16.3729 0.263397 16.888 0.0500488 17.425 0.0500488C17.9621 0.0500488 18.4772 0.263397 18.8569 0.643158C19.2367 1.02292 19.45 1.53799 19.45 2.07505ZM4.60005 16.925C4.60005 17.4621 4.3867 17.9772 4.00694 18.3569C3.62718 18.7367 3.11211 18.95 2.57505 18.95C2.03799 18.95 1.52292 18.7367 1.14316 18.3569C0.763397 17.9772 0.550049 17.4621 0.550049 16.925C0.550049 16.388 0.763397 15.8729 1.14316 15.4932C1.52292 15.1134 2.03799 14.9 2.57505 14.9C3.11211 14.9 3.62718 15.1134 4.00694 15.4932C4.3867 15.8729 4.60005 16.388 4.60005 16.925ZM16.075 21.65C17.6862 21.65 19.2314 21.01 20.3707 19.8707C21.51 18.7314 22.15 17.1862 22.15 15.575C22.15 13.9639 21.51 12.4187 20.3707 11.2794C19.2314 10.1401 17.6862 9.50005 16.075 9.50005C14.4639 9.50005 12.9187 10.1401 11.7794 11.2794C10.6401 12.4187 10 13.9639 10 15.575C10 17.1862 10.6401 18.7314 11.7794 19.8707C12.9187 21.01 14.4639 21.65 16.075 21.65ZM14.8654 13.0154L13.6545 14.225H15.7375C16.7222 14.225 17.6665 14.6162 18.3627 15.3124C19.0589 16.0086 19.45 16.9529 19.45 17.9375V18.275C19.45 18.4541 19.3789 18.6258 19.2523 18.7523C19.1258 18.8789 18.9541 18.95 18.775 18.95C18.596 18.95 18.4243 18.8789 18.2978 18.7523C18.1712 18.6258 18.1 18.4541 18.1 18.275V17.9375C18.1 17.311 17.8511 16.7101 17.4081 16.267C16.965 15.824 16.3641 15.575 15.7375 15.575H13.6545L14.8654 16.7846C14.9922 16.9114 15.0634 17.0833 15.0634 17.2625C15.0634 17.4418 14.9922 17.6137 14.8654 17.7404C14.7387 17.8672 14.5668 17.9384 14.3875 17.9384C14.2083 17.9384 14.0364 17.8672 13.9096 17.7404L11.5444 15.3739C11.4188 15.2472 11.3485 15.0759 11.349 14.8975C11.3495 14.719 11.4207 14.5481 11.5471 14.4221L13.9096 12.0596C14.0364 11.9329 14.2083 11.8617 14.3875 11.8617C14.5668 11.8617 14.7387 11.9329 14.8654 12.0596C14.9922 12.1864 15.0634 12.3583 15.0634 12.5375C15.0634 12.7168 14.9922 12.8887 14.8654 13.0154Z"
+                                fill="#1E1E1E" />
+                        </svg>
+                    </div>
+                    <div class="bannerbtncardText">
+                        <p class="bannerTitle">Money Return</p>
+                        <p class="bannersubText">Back Under 7 Days</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Tranding Now -->
+    <div class="trandingsectionMain cmn_gap">
+        <div class="container">
+            <h2>Trending Now</h2>
+            <div class="trandingnow_wrapper flex">
+                <div class="ech_trandingcard">
+                    <figure>
+                        <img src="assets/images/trending1.png" alt="trandingimg">
+                    </figure>
+                    <div class="trandingText">
+                        <p class="trandiangTextTitle">Extrenall Welcome To Paradise</p>
+                        <p class="trandingTextdescription">Lorem ipsum dolor sit amet consectetur. Facilisi amet luctus
+                            ultrices turpis. Tristique
+                            pellentesque
+                            congue amet ipsum neque rutrum at lectus. Eget mi fermentum volutpat pulvinar nullam urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="ech_trandingcard">
+                    <figure>
+                        <img src="assets/images/trending1.png" alt="trandingimg">
+                    </figure>
+                    <div class="trandingText">
+                        <p class="trandiangTextTitle">Extrenall Welcome To Paradise</p>
+                        <p class="trandingTextdescription">Lorem ipsum dolor sit amet consectetur. Facilisi amet luctus
+                            ultrices turpis. Tristique
+                            pellentesque
+                            congue amet ipsum neque rutrum at lectus. Eget mi fermentum volutpat pulvinar nullam urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="ech_trandingcard">
+                    <figure>
+                        <img src="assets/images/trending1.png" alt="trandingimg">
+                    </figure>
+                    <div class="trandingText">
+                        <p class="trandiangTextTitle">Extrenall Welcome To Paradise</p>
+                        <p class="trandingTextdescription">Lorem ipsum dolor sit amet consectetur. Facilisi amet luctus
+                            ultrices turpis. Tristique
+                            pellentesque
+                            congue amet ipsum neque rutrum at lectus. Eget mi fermentum volutpat pulvinar nullam urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="ech_trandingcard">
+                    <figure>
+                        <img src="assets/images/trending1.png" alt="trandingimg">
+                    </figure>
+                    <div class="trandingText">
+                        <p class="trandiangTextTitle">Extrenall Welcome To Paradise</p>
+                        <p class="trandingTextdescription">Lorem ipsum dolor sit amet consectetur. Facilisi amet luctus
+                            ultrices turpis. Tristique
+                            pellentesque
+                            congue amet ipsum neque rutrum at lectus. Eget mi fermentum volutpat pulvinar nullam urna.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- new Arival section -->
+    <div class="newarivalsectionWrap cmn_gap">
+        <div class="container">
+            <h2>New Arrival</h2>
+            <div class="flex newarivalWrapouter">
+
+                <div class="ech_cardnewArival">
+                    <figure>
+                        <img src="assets/images/newarival1.png" alt="">
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="ech_cardnewArival">
+                    <figure>
+                        <img src="assets/images/newarival1.png" alt="">
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="ech_cardnewArival">
+                    <figure>
+                        <img src="assets/images/newarival1.png" alt="">
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="ech_cardnewArival">
+                    <figure>
+                        <img src="assets/images/newarival1.png" alt="">
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="ech_cardnewArival">
+                    <figure>
+                        <img src="assets/images/newarival1.png" alt="">
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- about us section -->
+    <div class="aboutsectionWrap" style="background-image: url(assets/images/aboutimg.png)">
+        <div class="container">
+            <div class="banneraboutWrap">
+                <div class="aboutsectiondescription">
+                    <p class="aboutTitle">About Us</p>
+                    <p class="aboutdescription">Lorem ipsum dolor sit amet consectetur. Non pharetra euismod scelerisque
+                        ullamcorper
+                        elit magna viverra blandit quis. Sapien cras est pellentesque et mauris. Vel justo non nunc nec
+                        ultrices
+                        convallis quis. Ipsum leo scelerisque massa quis nibh. Suscipit fermentum ac quis leo ut ac.
+                        Vehicula
+                        amet tempor sagittis nulla quam. Posuere eleifend vitae cras amet non diam odio non donec. Sed
+                        amet
+                        volutpat aenean amet duis ultrices pharetra quis. Odio dignissim cursus orci facilisi etiam
+                        porttitor
+                        facilisis.</p>
+                </div>
+                <div>
+                    <button class="outline_btn">Explore More About Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sharee type section -->
+    <div class="shareeGalarywrap">
+        <div class="container">
+            <div class=" shareesectionWrap row align-items-center gx-4 gy-4">
+                <div class="echgalarycardWrap col">
+                    <div class="echgalarycard">
+                        <figure><img src="assets/images/newarival1.png" alt="galaryimg"></figure>
+                        <div class="galarylebel">
+                            <p class="galaryTitle">Saree Type 01</p>
+                            <p class="explorebtn">Explore Gallery +</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="echgalarycardWrap col">
+                    <div class="echgalarycard">
+                        <figure><img src="assets/images/newarival1.png" alt="galaryimg"></figure>
+                        <div class="galarylebel">
+                            <p class="galaryTitle">Saree Type 01</p>
+                            <p class="explorebtn">Explore Gallery +</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="echgalarycardWrap col">
+                    <div class="echgalarycard">
+                        <figure><img src="assets/images/trending1.png" alt="galaryimg"></figure>
+                        <div class="galarylebel">
+                            <p class="galaryTitle">Saree Type 01</p>
+                            <p class="explorebtn">Explore Gallery +</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our video section -->
+    <div class="ourvideoSection cmn_gap">
+        <div class="container">
+            <h2>Our Videos</h2>
+            <div class="ourvideoSectionWrap row gx-3 gy-3">
+                <div class="col ech_ourvideoSection">
+                    <figure>
+                        <img src="assets/images/ourvideo.png" alt="ourvideo">
+                        <i><svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0625 7.49974V4.72474C0.0625 1.14349 2.59375 -0.300261 5.6875 1.48099L8.0875 2.86849L10.4875 4.25599C13.5812 6.03724 13.5812 8.96224 10.4875 10.7435L8.0875 12.131L5.6875 13.5185C2.59375 15.2997 0.0625 13.8372 0.0625 10.2747V7.49974Z"
+                                    fill="#EBAF15" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <p class="ourvideoText">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="col ech_ourvideoSection">
+                    <figure>
+                        <img src="assets/images/ourvideo.png" alt="ourvideo">
+                        <i><svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0625 7.49974V4.72474C0.0625 1.14349 2.59375 -0.300261 5.6875 1.48099L8.0875 2.86849L10.4875 4.25599C13.5812 6.03724 13.5812 8.96224 10.4875 10.7435L8.0875 12.131L5.6875 13.5185C2.59375 15.2997 0.0625 13.8372 0.0625 10.2747V7.49974Z"
+                                    fill="#EBAF15" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <p class="ourvideoText">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="col ech_ourvideoSection">
+                    <figure>
+                        <img src="assets/images/ourvideo.png" alt="ourvideo">
+                        <i><svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0625 7.49974V4.72474C0.0625 1.14349 2.59375 -0.300261 5.6875 1.48099L8.0875 2.86849L10.4875 4.25599C13.5812 6.03724 13.5812 8.96224 10.4875 10.7435L8.0875 12.131L5.6875 13.5185C2.59375 15.2997 0.0625 13.8372 0.0625 10.2747V7.49974Z"
+                                    fill="#EBAF15" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <p class="ourvideoText">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our client say  -->
+    <div class="clientsection cmn_gap">
+        <div class="container">
+            <h2>What our clients say</h2>
+            <div class="clientsectiondetailsWrap row gx-3 gy-3">
+                <div class="clientechCard col">
+                    <i class="cotationIcon">
+                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0278 13.5477H16.7903V7.03574H13.4842C13.4842 4.58124 15.3376 2.97829 16.8904 2.47737V0.123047C13.5343 0.674061 10.0278 3.07848 10.0278 7.63685V13.5477ZM0.109619 13.5477H6.87204V7.03574H3.56597C3.56597 4.58124 5.41937 2.97829 6.97222 2.47737V0.123047C3.61606 0.674061 0.109619 3.07848 0.109619 7.63685V13.5477Z"
+                                fill="white" />
+                        </svg>
+
+                    </i>
+                    <div class="testimonialTextWrap">
+                        <p class="clientdetails">Ubiquity’s real-time data and analyses have been tremendous assets and
+                            have really helped
+                            strengthen our relationships with our partners.</p>
+
+                        <p class="clientName">Eric Cotton</p>
+                        <div class="row g-1">
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clientechCard col">
+                    <i class="cotationIcon">
+                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0278 13.5477H16.7903V7.03574H13.4842C13.4842 4.58124 15.3376 2.97829 16.8904 2.47737V0.123047C13.5343 0.674061 10.0278 3.07848 10.0278 7.63685V13.5477ZM0.109619 13.5477H6.87204V7.03574H3.56597C3.56597 4.58124 5.41937 2.97829 6.97222 2.47737V0.123047C3.61606 0.674061 0.109619 3.07848 0.109619 7.63685V13.5477Z"
+                                fill="white" />
+                        </svg>
+
+                    </i>
+                    <div class="testimonialTextWrap">
+                        <p class="clientdetails">Ubiquity’s real-time data and analyses have been tremendous assets and
+                            have really helped
+                            strengthen our relationships with our partners.</p>
+
+                        <p class="clientName">Eric Cotton</p>
+                        <div class="row g-1">
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clientechCard col">
+                    <i class="cotationIcon">
+                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0278 13.5477H16.7903V7.03574H13.4842C13.4842 4.58124 15.3376 2.97829 16.8904 2.47737V0.123047C13.5343 0.674061 10.0278 3.07848 10.0278 7.63685V13.5477ZM0.109619 13.5477H6.87204V7.03574H3.56597C3.56597 4.58124 5.41937 2.97829 6.97222 2.47737V0.123047C3.61606 0.674061 0.109619 3.07848 0.109619 7.63685V13.5477Z"
+                                fill="white" />
+                        </svg>
+
+                    </i>
+                    <div class="testimonialTextWrap">
+                        <p class="clientdetails">Ubiquity’s real-time data and analyses have been tremendous assets and
+                            have really helped
+                            strengthen our relationships with our partners.</p>
+
+                        <p class="clientName">Eric Cotton</p>
+                        <div class="row g-1">
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                            <div class="col">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2726 7.30775C17.9106 6.68582 17.5586 5.60227 16.6768 5.47414L12.5993 4.88161C12.2492 4.83074 11.9465 4.61085 11.7899 4.29351L9.96653 0.598948C9.57219 -0.199975 8.43283 -0.199975 8.03862 0.598948L6.21522 4.29384C6.05869 4.61105 5.75599 4.83107 5.40582 4.88194L1.32832 5.47433C0.446611 5.60246 0.0945403 6.68602 0.732502 7.30795L3.68289 10.1838C3.93623 10.4308 4.05186 10.7866 3.99203 11.1354L3.29548 15.1964C3.14488 16.0746 4.06661 16.7442 4.85519 16.3295L8.50225 14.4122C8.81543 14.2476 9.18959 14.2476 9.50276 14.4122L13.1498 16.3295C13.9385 16.7441 14.8601 16.0744 14.7095 15.1964L14.013 11.1354C13.9531 10.7866 14.0688 10.4309 14.3221 10.1838L17.2726 7.30775Z"
+                                        fill="#EBAF15" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
