@@ -22,6 +22,7 @@ h1{
     font-size: 55px;
     font-weight:500;
     line-height: 1;
+    margin: 0;
 }
 h2{
     font-size: 32px;
@@ -153,7 +154,46 @@ padding: 50px 0;
         max-width: 540px !important; 
     }
   }
+.commonhead{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.commonhead h1{
+font-family: "Playfair Display", serif;
+font-size: 32px;
+margin-bottom: 0;
+font-weight: 500;
+line-height: 55px;
+display: inline-block;
+}
+.commonhead .bredcrum {
+    font-family: "Assistant", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #2C56694D;
+    display: flex;
+    align-items: center;
 
+}
+.commonhead .bredcrum a{
+     display: inline-block;
+ font-family: "Assistant", sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+color: #2C56694D;
+}
+.commonhead .bredcrum p{
+    color: #2C5669;
+    font-family: "Assistant", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+}
 
 
  /* headersection  start*/
@@ -354,6 +394,7 @@ justify-content: center;
 }
 .headerBottom .headerTag p{
     color: #FFF;
+    margin: 0;
 }
  /* headersection  end*/
 
