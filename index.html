@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debi-Pokho</title>
     <link rel="stylesheet" type="text/css" href="styled.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="index.js"></script>
@@ -168,6 +167,7 @@
             </div>
         </div>
     </div>
+    <!-- banner section -->
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -243,8 +243,8 @@
     <div class="trandingsectionMain cmn_gap">
         <div class="container">
             <h2>Trending Now</h2>
-            <div class="trandingnow_wrapper flex">
-                <div class="ech_trandingcard">
+            <div class="trandingnow_wrapper row gx-4 gy-4">
+                <div class="ech_trandingcard col">
                     <figure>
                         <img src="assets/images/trending1.png" alt="trandingimg">
                     </figure>
@@ -257,7 +257,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ech_trandingcard">
+                <div class="ech_trandingcard col">
                     <figure>
                         <img src="assets/images/trending1.png" alt="trandingimg">
                     </figure>
@@ -270,7 +270,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ech_trandingcard">
+                <div class="ech_trandingcard col">
                     <figure>
                         <img src="assets/images/trending1.png" alt="trandingimg">
                     </figure>
@@ -283,7 +283,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ech_trandingcard">
+                <div class="ech_trandingcard col">
                     <figure>
                         <img src="assets/images/trending1.png" alt="trandingimg">
                     </figure>
@@ -304,9 +304,9 @@
     <div class="newarivalsectionWrap cmn_gap">
         <div class="container">
             <h2>New Arrival</h2>
-            <div class="flex newarivalWrapouter">
+            <div class="row gx-4 gy-4 newarivalWrapouter">
 
-                <div class="ech_cardnewArival">
+                <div class="ech_cardnewArival col">
                     <figure>
                         <img src="assets/images/newarival1.png" alt="">
                     </figure>
@@ -338,7 +338,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="ech_cardnewArival">
+                <div class="ech_cardnewArival col">
                     <figure>
                         <img src="assets/images/newarival1.png" alt="">
                     </figure>
@@ -370,7 +370,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="ech_cardnewArival">
+                <div class="ech_cardnewArival col">
                     <figure>
                         <img src="assets/images/newarival1.png" alt="">
                     </figure>
@@ -402,7 +402,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="ech_cardnewArival">
+                <div class="ech_cardnewArival col">
                     <figure>
                         <img src="assets/images/newarival1.png" alt="">
                     </figure>
@@ -434,7 +434,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="ech_cardnewArival">
+                <div class="ech_cardnewArival col">
                     <figure>
                         <img src="assets/images/newarival1.png" alt="">
                     </figure>
@@ -829,6 +829,114 @@
             </div>
         </div>
     </div>
+    <!-- footer section  -->
+    <div class="footer">
+        <div class="footerMainSection">
+            <div class="container">
+                <div class="footerlinksSection">
+                    <div class="echsection ">
+                        <h3>Quick Contact</h3>
+                        <div class="footerlistWrap">
+                            <p class="footerlist flex">
+                                <i><svg width="17" height="21" viewBox="0 0 17 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.7291 13.5807C13.7873 10.3509 13.5286 10.7539 13.5879 10.6697C14.3373 9.61273 14.7333 8.36875 14.7333 7.07214C14.7333 3.6336 11.943 0.801025 8.5 0.801025C5.06819 0.801025 2.26667 3.62801 2.26667 7.07214C2.26667 8.36791 2.67104 9.64446 3.44496 10.7157L5.27083 13.5807C3.31866 13.8807 0 14.7747 0 16.7432C0 17.4608 0.468369 18.4835 2.69968 19.2804C4.25771 19.8368 6.31762 20.1432 8.5 20.1432C12.5809 20.1432 17 18.9921 17 16.7432C17 14.7744 13.6852 13.8813 11.7291 13.5807ZM4.39163 10.0923C4.3854 10.0825 4.37889 10.073 4.3721 10.0636C3.7281 9.17768 3.4 8.12769 3.4 7.07214C3.4 4.23812 5.682 1.93436 8.5 1.93436C11.3121 1.93436 13.6 4.23914 13.6 7.07214C13.6 8.12939 13.2781 9.14376 12.6689 10.0064C12.6143 10.0784 12.8991 9.63593 8.5 16.5388L4.39163 10.0923ZM8.5 19.0099C4.04245 19.0099 1.13333 17.6997 1.13333 16.7432C1.13333 16.1004 2.62812 15.0434 5.94048 14.6314L8.02211 17.8978C8.0733 17.9782 8.14392 18.0443 8.22744 18.0901C8.31097 18.1359 8.4047 18.16 8.49996 18.16C8.59523 18.16 8.68896 18.1359 8.77248 18.0901C8.856 18.0443 8.92663 17.9782 8.97781 17.8978L11.0594 14.6314C14.3718 15.0434 15.8667 16.1004 15.8667 16.7432C15.8667 17.6915 12.9837 19.0099 8.5 19.0099Z"
+                                            fill="#9C9C9C" />
+                                        <path
+                                            d="M8.49996 4.23877C6.93766 4.23877 5.66663 5.5098 5.66663 7.0721C5.66663 8.6344 6.93766 9.90544 8.49996 9.90544C10.0623 9.90544 11.3333 8.6344 11.3333 7.0721C11.3333 5.5098 10.0623 4.23877 8.49996 4.23877ZM8.49996 8.7721C7.56258 8.7721 6.79996 8.00948 6.79996 7.0721C6.79996 6.13472 7.56258 5.3721 8.49996 5.3721C9.43734 5.3721 10.2 6.13472 10.2 7.0721C10.2 8.00948 9.43734 8.7721 8.49996 8.7721Z"
+                                            fill="#9C9C9C" />
+                                    </svg>
+                                </i>
+
+                                215 Woodland Ave. Manchester, NH 03102
+
+                            </p>
+                            <a class="footerlist flex">
+                                <i><svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4425 11.3472C13.094 10.9843 12.6736 10.7903 12.228 10.7903C11.7861 10.7903 11.3621 10.9807 10.9992 11.3437L9.86372 12.4755C9.77029 12.4252 9.67687 12.3785 9.58704 12.3318C9.45769 12.2671 9.33552 12.206 9.23132 12.1413C8.16773 11.4658 7.20116 10.5855 6.27412 9.44645C5.82497 8.87872 5.52314 8.40083 5.30396 7.91575C5.5986 7.64626 5.87168 7.36599 6.13758 7.0965C6.23819 6.99589 6.3388 6.89169 6.43941 6.79108C7.19398 6.03651 7.19398 5.05916 6.43941 4.30459L5.45847 3.32365C5.34708 3.21226 5.2321 3.09728 5.1243 2.9823C4.90871 2.75952 4.68234 2.52956 4.44878 2.31397C4.10024 1.96902 3.68343 1.78577 3.24506 1.78577C2.80669 1.78577 2.3827 1.96902 2.02338 2.31397L2.01619 2.32115L0.794508 3.55362C0.334579 4.01355 0.0722765 4.57408 0.0147854 5.22445C-0.0714511 6.27366 0.237563 7.25101 0.474714 7.8906C1.05681 9.46082 1.92636 10.9161 3.2235 12.4755C4.79732 14.3547 6.69093 15.8387 8.85403 16.8843C9.68046 17.276 10.7836 17.7395 12.016 17.8186C12.0915 17.8222 12.1705 17.8258 12.2424 17.8258C13.0724 17.8258 13.7695 17.5275 14.3157 16.9347C14.3193 16.9275 14.3265 16.9239 14.3301 16.9167C14.5169 16.6903 14.7325 16.4855 14.9589 16.2663C15.1134 16.119 15.2715 15.9645 15.426 15.8028C15.7817 15.4327 15.9685 15.0015 15.9685 14.5596C15.9685 14.114 15.7781 13.6864 15.4152 13.3271L13.4425 11.3472ZM14.7289 15.1309C14.7253 15.1309 14.7253 15.1345 14.7289 15.1309C14.5888 15.2818 14.445 15.4183 14.2905 15.5692C14.057 15.792 13.8198 16.0256 13.597 16.2879C13.2341 16.6759 12.8065 16.8592 12.246 16.8592C12.1921 16.8592 12.1346 16.8592 12.0807 16.8556C11.0135 16.7873 10.0218 16.3705 9.27803 16.0148C7.24428 15.0303 5.45847 13.6325 3.97448 11.8611C2.7492 10.3843 1.92996 9.01886 1.38738 7.55284C1.05322 6.65813 0.931049 5.96105 0.984947 5.3035C1.02088 4.8831 1.18257 4.53456 1.48081 4.23632L2.70608 3.01105C2.88215 2.84576 3.069 2.75593 3.25225 2.75593C3.47862 2.75593 3.66187 2.89247 3.77685 3.00745L3.78763 3.01823C4.00682 3.22304 4.21522 3.43504 4.43441 3.66141C4.5458 3.77639 4.66078 3.89138 4.77576 4.00995L5.7567 4.99089C6.13758 5.37177 6.13758 5.7239 5.7567 6.10478C5.6525 6.20898 5.55189 6.31319 5.44769 6.41379C5.14586 6.72281 4.8584 7.01026 4.5458 7.29053C4.53861 7.29772 4.53142 7.30131 4.52783 7.3085C4.21882 7.61751 4.27631 7.91934 4.34099 8.12415L4.35177 8.15649C4.60688 8.77452 4.9662 9.35662 5.51236 10.0501L5.51596 10.0537C6.50768 11.2754 7.5533 12.2276 8.70671 12.957C8.85403 13.0504 9.00494 13.1259 9.14867 13.1977C9.27803 13.2624 9.4002 13.3235 9.5044 13.3882C9.51877 13.3954 9.53314 13.4061 9.54752 13.4133C9.66969 13.4744 9.78467 13.5032 9.90324 13.5032C10.2015 13.5032 10.3883 13.3163 10.4494 13.2552L11.6783 12.0264C11.8004 11.9042 11.9945 11.7569 12.2208 11.7569C12.4436 11.7569 12.6269 11.897 12.7383 12.0192L12.7455 12.0264L14.7253 14.0062C15.0954 14.3727 15.0954 14.75 14.7289 15.1309ZM9.1882 4.85076C10.1296 5.00886 10.9848 5.45441 11.6675 6.13712C12.3502 6.81983 12.7922 7.675 12.9539 8.61642C12.9934 8.85357 13.1982 9.01886 13.4318 9.01886C13.4605 9.01886 13.4857 9.01526 13.5144 9.01167C13.7803 8.96855 13.9564 8.71703 13.9132 8.45113C13.7192 7.31209 13.1802 6.27366 12.3574 5.45082C11.5346 4.62798 10.4961 4.089 9.35708 3.89497C9.09118 3.85185 8.84325 4.02792 8.79654 4.29022C8.74983 4.55252 8.9223 4.80764 9.1882 4.85076ZM16.9926 8.311C16.6728 6.43535 15.7889 4.72859 14.4307 3.37036C13.0724 2.01214 11.3657 1.12821 9.49003 0.808421C9.22772 0.761709 8.97979 0.941369 8.93308 1.20367C8.88996 1.46957 9.06603 1.7175 9.33193 1.76421C11.0064 2.04807 12.5335 2.84217 13.748 4.05307C14.9625 5.26757 15.753 6.79467 16.0368 8.4691C16.0763 8.70625 16.2812 8.87154 16.5147 8.87154C16.5435 8.87154 16.5686 8.86794 16.5974 8.86435C16.8597 8.82483 17.0393 8.5733 16.9926 8.311Z"
+                                            fill="#9C9C9C" />
+                                    </svg>
+
+                                </i>
+
+                                (708) 856-0657
+
+                            </a>
+                            <a class="footerlist flex">
+                                <i><svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.3301 0.825439H1.66992C0.747271 0.825439 0 1.61341 0 2.57544V13.0754C0 14.0432 0.752764 14.8254 1.66992 14.8254H17.3301C18.245 14.8254 19 14.0465 19 13.0754V2.57544C19 1.61512 18.2557 0.825439 17.3301 0.825439ZM17.0962 1.99211L10.6808 8.67971C10.3654 9.01027 9.94605 9.19227 9.5 9.19227C9.05395 9.19227 8.63461 9.01023 8.31814 8.67862L1.90379 1.99211H17.0962ZM1.11328 12.838V2.81363L5.92407 7.82855L1.11328 12.838ZM1.90449 13.6588L6.71338 8.65132L7.53198 9.50466C8.05767 10.0556 8.75659 10.3589 9.5 10.3589C10.2434 10.3589 10.9423 10.0556 11.467 9.50575L12.2866 8.65132L17.0955 13.6588H1.90449ZM17.8867 12.838L13.0759 7.82855L17.8867 2.81363V12.838Z"
+                                            fill="#9C9C9C" />
+                                    </svg>
+
+                                </i>
+
+                                sales@Devi PAksha.com
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="echsection">
+                        <h3>Quick Links</h3>
+                        <div class="footerlistWrap">
+
+                            <a class="footerlist">
+                                Home
+                            </a>
+                            <a class="footerlist">
+                                Products
+                            </a>
+                            <a class="footerlist">
+                                Gallery
+                            </a>
+                            <a class="footerlist">
+                                Testimonials
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="echsection">
+                        <h3>Others</h3>
+                        <div class="footerlistWrap">
+                            <a class="footerlist">
+                                Privacy Policy
+                            </a>
+                            <a class="footerlist">
+                                Types Of Sarees
+                            </a>
+                            <a class="footerlist">
+                                About Us
+                            </a>
+                            <a class="footerlist">
+                                Videos
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="echsection">
+                        <h3>Subscribe To our Newsletter </h3>
+                        <div class="footerlistWrap">
+                            <p>Please enter email address to create or update your profile and manage your subscription
+                            </p>
+                            <div class="newsletterWrap">
+                                <input type="text" placeholder="Enter Your Email">
+                                <button class="primaryBtn">Subscribe</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerbottomsection">
+            <p>Copyright © 2024. All rights reserved.</p>
+        </div>
+    </div>
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

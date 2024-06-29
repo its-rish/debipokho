@@ -855,3 +855,111 @@ margin: -8px;
 height: 100%;
 }
 
+/* footer section style */
+.footer{
+    background-color: #FAFAFA;
+    margin-top: 50px;
+}
+.footer .footerMainSection{
+    padding: 59px 0;
+    border: 1px solid #9C9C9C;
+    border-right: 0;
+    border-left: 0;
+}
+.footer .footerlinksSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer h3{
+font-family: "Assistant", sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.3;
+color: #1E1E1E;
+margin-bottom: 0;
+}
+.footer p{
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #1E1E1E;
+    margin-bottom: 0;
+}
+.footer a{
+    display: inline-block;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #1E1E1E;
+    margin-bottom: 0;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+.footer i{
+    display: inline-block;
+    margin-right: 17px;
+
+}
+.footer a:hover{
+    color: #EC0902;
+}
+.footer .footerlinksSection .echsection{
+    width: 25%;
+    padding-right: 110px;
+}
+.footer .footerlinksSection .echsection:first-child{
+    width: 25%;
+}
+.footer .footerlinksSection .echsection:last-child{
+    width: 25%;
+    padding-right: 0;
+}
+.footer .footerlinksSection .echsection .footerlistWrap{
+padding-top: 34px;
+
+}
+.footer .footerlinksSection .echsection .footerlistWrap .footerlist{
+margin-bottom: 20px;
+    
+    }
+.footer .footerlinksSection .echsection .footerlistWrap .footerlist:last-child{
+    margin-bottom: 0;
+}
+.footer .newsletterWrap{
+    position: relative;
+    margin-top: 25px;
+}
+.footer .newsletterWrap input{
+    background-color: transparent;
+    border-radius: 80px;
+    border: 1px solid #9C9C9C;
+    padding: 16px 29px;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #1E1E1E;
+    width: 100%;
+}
+.footer .newsletterWrap input::placeholder{
+    color: #9C9C9C;
+}
+.footer .newsletterWrap button{
+    border-radius: 80px;
+    min-width: 113px;
+    padding: 14.5px 10px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.footer .footerbottomsection{
+    padding: 29px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
