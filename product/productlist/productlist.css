@@ -1,0 +1,214 @@
+.productLeastingWrap{
+    padding: 20px 0;
+    border: 1px solid #DFF1FA;
+    border-right: 0;
+    border-left: 0;
+    margin-bottom: 50px;
+}
+.productheaderList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.productheaderList .searchsectionouterWrap{
+display: flex;
+background-color: #F5F6F6;
+border-radius: 80px;
+height: 55px;
+max-height: 55px;
+}
+.searchsectionouterWrap .dropdownsegment{
+background-color: transparent;
+height: auto;
+min-height: auto;
+}
+.searchsectionouterWrap .dropdownsegment button{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-family: "Assistant", sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.5;
+color: #2C5669;
+padding: 13px 13px 13px 21px;
+display: flex;
+align-items: center;
+}
+.searchsectionouterWrap .dropdownsegment button::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 1px;
+    background-color: #2C5669;
+}
+.searchsectionouterWrap .dropdownsegment button::after{
+    display: none;
+}
+.searchsectionouterWrap .dropdownsegment button i{
+
+line-height: 1.5;
+    font-size: 0;
+    margin-left: 8px;
+    display: inline-block;
+}
+.searchsectionouterWrap .dropdownsegment button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.searchsectionouterWrap .inputsection{
+    position: relative;
+  
+}
+.searchsectionouterWrap .inputsection input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 100%;
+    font-family: "Assistant", sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.5;
+color:#1E1E1E;
+min-width: 263px;
+padding: 16px;
+
+}
+.searchsectionouterWrap .inputsection input::placeholder{
+    color: #2C5669;
+}
+.searchsectionouterWrap .inputsection .primaryBtn{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 6px;
+width: 45px;
+height: 45px;
+border-radius: 100%;
+padding: 5px;
+}
+.productheaderList .searchTitle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.productheaderList .searchTitle h2{
+font-family: "Playfair Display", serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 1;
+color: #1E1E1E;
+margin: 0;
+text-align: center;
+margin-bottom: 15px;
+}
+.productheaderList .searchTitle p{
+    margin: 0;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.93px;
+text-align: center;
+    color: #072532;
+    
+}
+.productheaderList .dropdownWrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productheaderList .dropdownWrap .dropdownsection{
+    padding-right:  30px;
+    padding-left: 30px;
+    position: relative;
+}
+.productheaderList .dropdownWrap .dropdownsection:last-child{
+    padding-right: 0;
+}
+.productheaderList .dropdownWrap .dropdownsection:first-child{
+    padding-left: 0;
+}
+.productheaderList .dropdownWrap .dropdownsection::before{
+content: "";
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 0;
+width: 1px;
+height: calc(100% - 10px);
+background-color: #1E1E1E;
+}
+.productheaderList .dropdownWrap .dropdownsection:last-child::before{
+    display: none;
+}
+.productheaderList .dropdownWrap .dropdownsection label{
+    color: #1E1E1E;
+    font-family: "Assistant", sans-serif;
+    font-size: 13px;
+    line-height: 1.1;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+.dropdown{
+
+}
+.dropdown button{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    min-width: auto;
+    width: auto;
+    min-height: auto;
+    height: auto;
+    font-family: "Assistant", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 20.93px;
+text-align: left;
+color: #1E1E1E;
+display: flex;
+align-items: center;
+padding: 0;
+
+}
+.dropdown button:hover{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+color: #1E1E1E;
+}
+.dropdown button:focus{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+color: #1E1E1E;
+
+    
+}
+.dropdown button i{
+    display: inline-block;
+    margin-left: 13px;
+}
+.dropdown button::after{
+    display: none;
+}
+/* productlist section style */
+.arivalmainWrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+width: 100%;
+
+}
+.arivalmainWrap .arivalouterwrap{
+padding: 15px;
+width: 100%;
+max-width: calc(100%/5);
+flex-basis: calc(100%/5);
+}

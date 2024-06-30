@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styled.css">
+    <link rel="stylesheet" type="text/css" href="productlist.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>productlist</title>
@@ -182,35 +184,424 @@
             </div>
         </div>
         <div class="productLeastingWrap">
-            <div class="flex">
-                <div class="searchsectionouterWrap">
-                    <div class="dropdown dropdownsegment">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+            <div class="container">
+                <div class="productheaderList">
+                    <div class="searchsectionouterWrap">
+                        <div class="dropdown dropdownsegment">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                                <i><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.79468 7.04565C6.58374 7.25633 6.29781 7.37466 5.99968 7.37466C5.70156 7.37466 5.41562 7.25633 5.20468 7.04565L0.961181 2.80365C0.750235 2.5926 0.631766 2.3064 0.631836 2.00801C0.631906 1.70962 0.75051 1.42347 0.961556 1.21252C1.1726 1.00158 1.4588 0.883108 1.7572 0.883179C2.05559 0.883249 2.34173 1.00185 2.55268 1.2129L5.99968 4.6599L9.44668 1.2129C9.65876 1.00787 9.94289 0.89434 10.2379 0.896763C10.5328 0.899186 10.8151 1.01737 11.0237 1.22585C11.2324 1.43434 11.3509 1.71645 11.3536 2.01142C11.3563 2.30639 11.243 2.59063 11.0382 2.8029L6.79543 7.0464L6.79468 7.04565Z"
+                                            fill="#2C5669" />
+                                    </svg>
+                                </i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="inputsection">
+                            <input type="text" placeholder="Search Product">
+                            <button class="primaryBtn"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 17.8671C14.4183 17.8671 18 14.2853 18 9.86707C18 5.44879 14.4183 1.86707 10 1.86707C5.58172 1.86707 2 5.44879 2 9.86707C2 14.2853 5.58172 17.8671 10 17.8671Z"
+                                        stroke="white" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M20.0004 19.8671L15.6504 15.5171" stroke="white" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="inputsection">
-                        <input type="text" placeholder="Search Product">
-                        <button class="primaryBtn"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                    <div class="searchTitle">
+                        <h2>Showing Result Of</h2>
+                        <p>133 Products</p>
+                    </div>
+                    <div class="dropdownWrap">
+                        <div class="dropdownsection">
+                            <label for="">Price</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Price Range
+                                    <i><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.79468 6.54541C6.58374 6.75608 6.29781 6.87442 5.99968 6.87442C5.70156 6.87442 5.41562 6.75608 5.20468 6.54541L0.961181 2.30341C0.750235 2.09236 0.631766 1.80616 0.631836 1.50776C0.631906 1.20937 0.75051 0.923227 0.961556 0.71228C1.1726 0.501334 1.4588 0.382864 1.7572 0.382935C2.05559 0.383005 2.34173 0.501609 2.55268 0.712655L5.99968 4.15966L9.44668 0.712655C9.65876 0.507625 9.94289 0.394096 10.2379 0.396519C10.5328 0.398942 10.8151 0.517124 11.0237 0.72561C11.2324 0.934097 11.3509 1.21621 11.3536 1.51118C11.3563 1.80615 11.243 2.09038 11.0382 2.30266L6.79543 6.54616L6.79468 6.54541Z"
+                                                fill="#EC0902" />
+                                        </svg>
+                                    </i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdownsection">
+                            <label for="">Category</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Category
+                                    <i><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.79468 6.54541C6.58374 6.75608 6.29781 6.87442 5.99968 6.87442C5.70156 6.87442 5.41562 6.75608 5.20468 6.54541L0.961181 2.30341C0.750235 2.09236 0.631766 1.80616 0.631836 1.50776C0.631906 1.20937 0.75051 0.923227 0.961556 0.71228C1.1726 0.501334 1.4588 0.382864 1.7572 0.382935C2.05559 0.383005 2.34173 0.501609 2.55268 0.712655L5.99968 4.15966L9.44668 0.712655C9.65876 0.507625 9.94289 0.394096 10.2379 0.396519C10.5328 0.398942 10.8151 0.517124 11.0237 0.72561C11.2324 0.934097 11.3509 1.21621 11.3536 1.51118C11.3563 1.80615 11.243 2.09038 11.0382 2.30266L6.79543 6.54616L6.79468 6.54541Z"
+                                                fill="#EC0902" />
+                                        </svg>
+                                    </i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- productlist all  -->
+    <!-- new Arival section -->
+    <div class="container">
+        <div class="arivalmainWrap">
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M10 17.8671C14.4183 17.8671 18 14.2853 18 9.86707C18 5.44879 14.4183 1.86707 10 1.86707C5.58172 1.86707 2 5.44879 2 9.86707C2 14.2853 5.58172 17.8671 10 17.8671Z"
-                                    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M20.0004 19.8671L15.6504 15.5171" stroke="white" stroke-width="3"
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
+
                         </button>
                     </div>
                 </div>
-                <div class="searchTitle">
-                    <h2>Showing Result Of</h2>
-                    <p>133 Products</p>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="arivalouterwrap">
+                <div class="ech_cardnewArival ">
+                    <figure>
+                        <img src="/assets/images/newarival1.png" alt="">
+                        <i><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5167 16.3414C10.2334 16.4414 9.76675 16.4414 9.48341 16.3414C7.06675 15.5164 1.66675 12.0747 1.66675 6.2414C1.66675 3.6664 3.74175 1.58307 6.30008 1.58307C7.81675 1.58307 9.15841 2.3164 10.0001 3.44974C10.8417 2.3164 12.1917 1.58307 13.7001 1.58307C16.2584 1.58307 18.3334 3.6664 18.3334 6.2414C18.3334 12.0747 12.9334 15.5164 10.5167 16.3414Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                    </figure>
+                    <div class="flex ech_cardArivalText">
+                        <div class="ech_cardTextsection">
+                            <p class="arivalTitle">Printed Designer Saree</p>
+                            <p class="sectionPrice">₹4000.00</p>
+
+                        </div>
+                        <button>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.66675 2.66644H3.11675C4.01675 2.66644 4.72508 3.44144 4.65008 4.33311L3.95841 12.6331C3.84175 13.9914 4.91674 15.1581 6.28341 15.1581H15.1584C16.3584 15.1581 17.4084 14.1748 17.5001 12.9831L17.9501 6.73311C18.0501 5.34978 17.0001 4.22477 15.6084 4.22477H4.85009"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5417 19.3331C14.117 19.3331 14.5833 18.8667 14.5833 18.2914C14.5833 17.7161 14.117 17.2498 13.5417 17.2498C12.9664 17.2498 12.5 17.7161 12.5 18.2914C12.5 18.8667 12.9664 19.3331 13.5417 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.87492 19.3331C7.45022 19.3331 7.91659 18.8667 7.91659 18.2914C7.91659 17.7161 7.45022 17.2498 6.87492 17.2498C6.29962 17.2498 5.83325 17.7161 5.83325 18.2914C5.83325 18.8667 6.29962 19.3331 6.87492 19.3331Z"
+                                    stroke="#464151" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 7.66644H17.5" stroke="#464151" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -196,6 +196,7 @@ color: #2C56694D;
 }
 
 
+
  /* headersection  start*/
 .headersection .header_wrapper{
 display: flex;
@@ -563,33 +564,33 @@ margin-bottom: 15px;
 margin-bottom: 40px;
 text-align: center;
 }
-.newarivalsectionWrap .newarivalWrapouter{
-flex-wrap: wrap;
-}
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival{
-    width: calc(100% / 5);
-    flex-basis: calc(100% / 5);
-    padding: 15px;
 
-}
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival figure{
+.ech_cardnewArival figure{
     height: 326px;
     width: 100%;
+    position: relative;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival figure img{
+.ech_cardnewArival figure i{
+    display: inline-block;
+    line-height: 0;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+ .ech_cardnewArival figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText{
+ .ech_cardnewArival .ech_cardArivalText{
     padding-top: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection{
+ .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection{
     padding-right: 10px;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection .arivalTitle{
+ .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection .arivalTitle{
     font-family: "Assistant", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -598,7 +599,7 @@ flex-wrap: wrap;
     margin-bottom: 5px;
     
 } 
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection .arivalTitle.sectionPrice{
+ .ech_cardnewArival .ech_cardArivalText .ech_cardTextsection .arivalTitle.sectionPrice{
     font-family: "Assistant", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -606,14 +607,14 @@ flex-wrap: wrap;
     color: #1E1E1E;
     margin-bottom: 10px;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText button{
+ .ech_cardnewArival .ech_cardArivalText button{
     padding: 0;
     background-color: transparent;
     border: 0;
     outline: 0;
     cursor: pointer;
 }
-.newarivalsectionWrap .newarivalWrapouter .ech_cardnewArival .ech_cardArivalText button:hover{
+ .ech_cardnewArival .ech_cardArivalText button:hover{
     opacity: .7;
 }
  /* new arival end */
