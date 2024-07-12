@@ -1005,3 +1005,17 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
 }
+
+
+/* arival section  */
+.newarivalsection{
+    margin-top: 40px;
+  }
+  .newarivalsection .newarivalTitle{
+    margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #1E1E1E;
+  }
