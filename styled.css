@@ -1363,7 +1363,6 @@ line-height: 1.2;
     padding: 19px 15px;
     border: 1px solid #E9E1D4;
     border-radius: 10px;
-    margin-top: 30px;
 }
 .noteWrap .noteTitle{
 font-family: "Assistant", sans-serif;
@@ -1381,4 +1380,5 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.4;
 color: #1E1E1E;
+margin: 0;
 }
