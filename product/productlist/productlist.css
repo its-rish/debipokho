@@ -202,16 +202,3 @@ color: #1E1E1E;
     display: none;
 }
 /* productlist section style */
-.arivalmainWrap{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-width: 100%;
-
-}
-.arivalmainWrap .arivalouterwrap{
-padding: 15px;
-width: 100%;
-max-width: calc(100%/5);
-flex-basis: calc(100%/5);
-}

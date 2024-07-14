@@ -1,0 +1,145 @@
+table {
+  width: 100%;
+}
+table thead tr th {
+  color: #1e1e1e;
+  font-family: "Assistant", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.54px;
+  text-align: left;
+  padding: 23px 8px 26px 8px;
+  border-bottom: 1px solid #e9e1d4;
+}
+table thead tr th:first-child {
+  padding-left: 16px;
+}
+
+table tbody tr td {
+  vertical-align: top;
+  padding: 15px 8px 15px 8px;
+}
+table thead tr th:first-child {
+  padding: 23px 0 26px 16px;
+  width: 45px;
+  min-width: 45px;
+  max-width: 45px;
+  left: 0px;
+}
+table tbody tr td:first-child {
+  padding-left: 16px;
+  width: 45px;
+  min-width: 45px;
+  max-width: 45px;
+  left: 0px;
+}
+
+.product_sectioncolor {
+  width: 100%;
+}
+.productdetailsmain {
+  padding-top: 50px;
+}
+.wrappertable {
+  position: relative;
+  overflow: auto;
+  border: 1px solid #e9e1d4;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+}
+.deliver_segment p {
+  margin: 0;
+  font-family: "Assistant", sans-serif;
+}
+.deliver_segment p span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.deliver_segment p.delivery_Date {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1e1e1e;
+  margin-bottom: 12px;
+}
+.deliver_segment p.deliveryTag {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ec0902;
+}
+.quantity_deal .countitySection {
+  width: 111px;
+  min-width: 111px;
+  border: 1px solid #8f8f8f;
+  justify-content: space-between;
+  border-radius: 80px;
+  height: 48px;
+  padding: 11px 0;
+}
+.quantity_deal .countitySection button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-family: "Assistant", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0;
+  color: #333333;
+  padding: 0 14px;
+  border-right: 1px solid #8f8f8f;
+  transition: all ease-in-out .3s;
+}
+.quantity_deal .countitySection button:hover{
+    color: #E70A04;
+}
+.quantity_deal .countitySection button:last-child{
+border-right: 0;
+border-left: 1px solid #8f8f8f;
+}
+.quantity_deal .countitySection p {
+  margin: 0;
+  font-family: "Assistant", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.quantity_deal .icon_btnWrap{
+    padding-left: 23px;
+    margin:0 -11px;
+}
+.quantity_deal .icon_btnWrap button{
+    padding: 0 11px;
+}
+
+
+/* check box section */
+.form-check{
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 0;
+  width: 18px;
+  height: 18px;
+  min-height: 18px !important;
+  min-width: 18px !important;
+  line-height: 0 !important;
+}
+.form-check .form-check-input{
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border: 0;
+  border: 1px solid #D3DFD9;
+  border-radius: 2px !important;
+  margin: 0 !important;
+
+
+}

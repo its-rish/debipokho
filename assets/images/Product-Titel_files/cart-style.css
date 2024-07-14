@@ -1,0 +1,78 @@
+table{
+    width: 100%;
+   
+}
+table thead tr th{
+    color: #1E1E1E;
+  font-family: "Assistant", sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 23.54px;
+text-align: left;
+padding: 23px 8px 26px 8px;
+border-bottom: 1px solid #E9E1D4;
+}
+table thead tr th:first-child{
+    padding-left: 16px;
+}
+
+table tbody tr td{
+vertical-align: top;
+padding: 15px 8px 15px 8px;
+}
+table thead tr th:first-child{
+    padding:30px 0 15px 16px ;
+    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
+    left: 0px;
+}
+table tbody tr td:first-child{
+    padding-left: 16px;
+    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
+    left: 0px;
+}
+
+.product_sectioncolor{
+    width: 100%;
+}
+.productdetailsmain{
+    padding-top: 50px;
+}
+.wrappertable {
+    position: relative;
+    overflow: auto;
+    border: 1px solid #E9E1D4;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  
+  .sticky-col {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+  }
+  .deliver_segment p{
+    margin: 0;
+  font-family: "Assistant", sans-serif;
+  }
+  .deliver_segment p span{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .deliver_segment p.delivery_Date{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+color: #1E1E1E;    
+margin-bottom: 12px;
+  }
+  .deliver_segment p.deliveryTag{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #EC0902;    
+  }
+  

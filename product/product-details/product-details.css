@@ -527,22 +527,16 @@
   margin: 0 0 0 15px;
 }
 
-.sliderReviewSection .sliderRange {
+.sliderReviewSection .progress {
   min-width: calc(100% - 30px);
   border-radius: 10px;
   background-color: #e7e7e7;
   position: relative;
   height: 8px;
 }
-.sliderReviewSection .sliderRange::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: #f19934;
+.sliderReviewSection .progress-bar{
+background-color: #F19934 !important;
+border-radius: 10px;
 }
 
 .reviewlistview {
